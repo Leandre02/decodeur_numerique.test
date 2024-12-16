@@ -63,31 +63,31 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // Affichage des résultats
-form.style.display = "none"; // Masquer le formulaire
-resultsSection.style.display = "block"; // Afficher la section des résultats
+    form.style.display = "none"; // Masquer le formulaire
+    resultsSection.style.display = "block"; // Afficher la section des résultats
 
-let message = `<strong>Merci d'avoir complété le quiz.</strong><br><br>`; 
-message += `Votre score est de <strong>${totalPoints}%</strong>.<br><br>`;
+    let message = `<strong>Merci d'avoir complété le quiz.</strong><br><br>`; 
+    message += `Votre score est de <strong>${totalPoints}%</strong>.<br><br>`;
 
-if (totalPoints > 50) {
-  message += `<h3 style="margin-top:1em;">Analyse :</h3>`;
-  message += `Vous avez déjà une utilisation plutôt consciente de vos médias. Vous faites preuve d’esprit critique et de discernement. Continuez à vérifier régulièrement vos sources, à varier vos canaux d’information et à vous informer sur les bonnes pratiques de sécurité en ligne.<br><br>`;
-  message += `<h3>Pour aller plus loin :</h3>
-  <ul>
-    <li>Explorez des ressources sur la littératie numérique pour affiner davantage vos compétences.</li>
-    <li>Diversifiez vos sources d'information afin de réduire les risques de biais cognitifs.</li>
-    <li>Tenez-vous au courant des évolutions des politiques de confidentialité des plateformes que vous utilisez.</li>
-  </ul>`;
-} else {
-  message += `<h3 style="margin-top:1em;">Analyse :</h3>`;
-  message += `Votre utilisation des médias en ligne pourrait être davantage optimisée. Il semble que vous soyez exposé(e) à des contenus sponsorisés sans toujours les évaluer, ou que vous n'appliquiez pas systématiquement de bonnes pratiques de protection de la vie privée (navigation privée, suppression de l'historique, gestion des cookies, etc.).<br><br>`;
-  message += `<h3>Quelques conseils :</h3>
-  <ul>
-    <li><strong>Réfléchissez avant de cliquer :</strong> Limitez le temps passé sur certaines applis et sources de contenus non vérifiés.</li>
-    <li><strong>Vérifiez la fiabilité :</strong> Avant de partager une information, prenez le temps de consulter sa source et de la comparer à d’autres médias reconnus.</li>
-    <li><strong>Protégez vos données :</strong> Utilisez la navigation privée, supprimez régulièrement l’historique et les cookies, et soyez vigilant lorsque vous associez votre compte Google à des sites externes.</li>
-  </ul>`;
-}
+    if (totalPoints > 50) {
+      message += `<h3 style="margin-top:1em;">Analyse :</h3>`;
+      message += `Vous avez déjà une utilisation plutôt consciente de vos médias. Vous faites preuve d’esprit critique et de discernement. Continuez à vérifier régulièrement vos sources, à varier vos canaux d’information et à vous informer sur les bonnes pratiques de sécurité en ligne.<br><br>`;
+      message += `<h3>Pour aller plus loin :</h3>
+      <ul>
+        <li>Explorez des ressources sur la littératie numérique pour affiner davantage vos compétences.</li>
+        <li>Diversifiez vos sources d'information afin de réduire les risques de biais cognitifs.</li>
+        <li>Tenez-vous au courant des évolutions des politiques de confidentialité des plateformes que vous utilisez.</li>
+      </ul>`;
+    } else {
+      message += `<h3 style="margin-top:1em;">Analyse :</h3>`;
+      message += `Votre utilisation des médias en ligne pourrait être davantage optimisée. Il semble que vous soyez exposé(e) à des contenus sponsorisés sans toujours les évaluer, ou que vous n'appliquiez pas systématiquement de bonnes pratiques de protection de la vie privée (navigation privée, suppression de l'historique, gestion des cookies, etc.).<br><br>`;
+      message += `<h3>Quelques conseils :</h3>
+      <ul>
+        <li><strong>Réfléchissez avant de cliquer :</strong> Limitez le temps passé sur certaines applis et sources de contenus non vérifiés.</li>
+        <li><strong>Vérifiez la fiabilité :</strong> Avant de partager une information, prenez le temps de consulter sa source et de la comparer à d’autres médias reconnus.</li>
+        <li><strong>Protégez vos données :</strong> Utilisez la navigation privée, supprimez régulièrement l’historique et les cookies, et soyez vigilant lorsque vous associez votre compte Google à des sites externes.</li>
+      </ul>`;
+    }
 
 resultsSummary.innerHTML = message;
 
