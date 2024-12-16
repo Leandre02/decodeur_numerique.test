@@ -27,9 +27,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['source'])) {
 }
 ?>
 <!DOCTYPE html>
-<html lang="fr-CA">
+<html lang="fr">
 <head>
-    <title>Fact-Checking</title>
+    <meta charset="UTF-8">
+    <title>Vérification de Fiabilité des Sources</title>
+    <script>
+        function masquerListe() {
+            var mediaList = document.getElementById('media-list');
+            if (mediaList.style.display === 'none') {
+                mediaList.style.display = 'block';
+            } else {
+                mediaList.style.display = 'none';
+            }
+        }
+    </script>
 </head>
 <body>
     <div class="fact-check-container">
@@ -41,9 +52,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['source'])) {
         <?php if ($message): ?>
             <p class="message <?php echo $messageClass; ?>"><?php echo $message; ?></p>
         <?php endif; ?>
-        <!--Fonction pour voir la liste des medias-->
-        <!--<h2>Liste des médias de confiance</h2>-->
-        <!--< afficherListe($mysqli); ?>-->
+
+        <!-- Bouton/titre cliquable pour voir la liste des médias -->
+        <h2 onclick="masquerListe()" style="cursor:pointer;">Voir la liste des médias de confiance</h2>
+
+        <!-- Conteneur masqué pour la liste des médias -->
+        <div id="media-list">
+            <?php afficherListe($mysqli); ?>
+        </div>
     </div>
 </body>
 </html>
+
