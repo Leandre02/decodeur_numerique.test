@@ -1,0 +1,114 @@
+<!-- Page principale du site internet leDecodeur -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Le décodeur - Apprenez à douter, devenez éclairé."</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>Le décodeur</h1>
+      <p>Décoder, Informer, Réenchanter</p>
+      <nav>
+        <ul>
+          <li><a href="#problematique">Problématique</a></li>
+          <li><a href="#solutions">Solutions</a></li>
+          <li><a href="#ressources">Ressources</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Section Problématique -->
+    <section id="problematique" class="section">
+      <div class="container">
+        <h2>Problématique</h2>
+        <p>
+          La désinformation, la polarisation sociale et les biais cognitifs sont des problèmes majeurs
+          qui affectent notre compréhension du monde. Le décodeur vise à sensibiliser et éduquer pour mieux
+          naviguer dans l'univers complexe de l'information.
+        </p>
+        <ul>
+          <li>Désinformation : Tri difficile des sources fiables.</li>
+          <li>Propagande : Messages idéologiques biaisés.</li>
+          <li>Polarisation : Radicalisation des idées.</li>
+          <li>Biais cognitifs : Déformations dans la transmission de l'information.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Section Solutions -->
+    <section id="solutions" class="section">
+      <div class="container">
+        <h2>Nos Solutions</h2>
+        <div class="solutions-grid">
+          <div class="solution-card">
+            <a href="./FactChecking.php">
+            <h3>Fact-checking</h3>
+            <p>Un service d'analyse et de vérification pour trier les sources fiables.</p>
+          </a>
+          </div>
+          <div class="solution-card">
+            <a href="https://moijenseigne.ca/causeries-pedagogiques/" target="_blank">
+            <h3>Capsules Vidéos</h3>
+            <p>Des vidéos éducatives pour sensibiliser aux biais cognitifs et à la propagande.</p>
+          </a>
+          </div>
+          <div class="solution-card">
+            <a href="./Ressources/Jeux_educatif/role.html">
+            <h3>Jeux Éducatifs</h3>
+            <p>Apprenez en vous amusant grâce à des jeux interactifs et engageants.</p>
+          </a>
+          </div>
+          <div class="solution-card">
+            <h3>API Interactive</h3>
+            <a href="./Ressources/Api.php">
+            <p>Un outil pour évaluer la qualité des informations en temps réel.</p>
+          </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Ressources -->
+    <section id="ressources" class="section">
+      <div class="container">
+        <h2>Ressources</h2>
+        <p>Testez notre questionnaire interactifs pour en apprendre plus la qualité de votre information</p>
+        <button id="startQuiz"><a href="./Ressources/quiz_diagnostic.html">commencez un quiz</a></button>
+      </div>
+    </section>
+
+    <!-- Section pour les profs -->
+
+    <!-- Section Contact -->
+<section id="contact" class="section">
+  <div class="container">
+    <h2>Contactez-nous</h2>
+    <form id="contactForm">
+      <input type="text" name="name" placeholder="Votre nom" required>
+      <input type="email" name="email" placeholder="Votre email" required>
+      <textarea name="message" placeholder="Votre message" required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </div>
+</section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Le décodeur - Tous droits réservés</p>
+      <p>Une initiative des étudiants du Cégep de Victoriaville</p>
+    </div>
+  </footer>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>

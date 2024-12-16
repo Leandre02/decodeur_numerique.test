@@ -1,0 +1,223 @@
+/* Feuille de styles globales pour Ledecodeur */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: #f9f9f9;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Header */
+header {
+    background-image: url('../assets/fake.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+/* Ajoute une superposition pour rendre le texte plus lisible */
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Une superposition noire semi-transparente */
+    z-index: 1; /* Place la superposition derrière le texte */
+}
+
+header h1, header p {
+    position: relative; /* Place le texte au-dessus de la superposition */
+    z-index: 2;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: yellowgreen;
+}
+
+html {
+    scroll-behavior: smooth; /* Ajoute un défilement fluide */
+}
+
+/* Sections */
+.section {
+    padding: 50px 0;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.solutions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.solution-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Ajout de la transition */
+}
+
+.solution-card h3 {
+    margin-top: 0;
+}
+
+/* Effet lors du survol */
+.solution-card:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    display: inline-block;
+    background: yellowgreen;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+button#startQuiz a {
+    text-decoration: none; /* Enlève le soulignement du texte */
+    color: white; /* Assure que le texte est blanc */
+    display: block; /* Permet au lien de remplir tout le bouton */
+    padding: 10px 20px; /* Ajoute du padding pour rendre le lien cliquable */
+}
+
+button#startQuiz a:hover {
+    color: white; /* Assure que le texte reste blanc au survol */
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Formualaire de Contact */
+#contact {
+    background: #f8f8f8; 
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#contactForm {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espacement entre les champs */
+}
+
+#contactForm input,
+#contactForm textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+#contactForm input:focus,
+#contactForm textarea:focus {
+    border: 1px solid #009688; /* Couleur d'accent */
+    box-shadow: 0 4px 8px rgba(0, 150, 136, 0.3); /* Ombre accentuée */
+    outline: none;
+}
+
+#contactForm textarea {
+    height: 120px; /* Taille par défaut du champ texte */
+    resize: none; /* Empêche le redimensionnement */
+}
+
+#contactForm button {
+    background: #009688;
+    color: white;
+    padding: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#contactForm button:hover {
+    background: #00695c; /* Couleur plus foncée au survol */
+}
+
+#contactForm button:active {
+    transform: scale(0.95);
+}
+
+.solution-card a {
+    text-decoration: none; /* Enlève le soulignement du texte */
+    color: inherit; /* Hérite de la couleur du texte de la carte */
+    display: block; /* Permet au lien de remplir toute la carte */
+    height: 100%; /* Assure que le lien prend toute la hauteur de la carte */
+    width: 100%; /* Assure que le lien prend toute la largeur de la carte */
+}
+
+.solution-card a:hover {
+    color: inherit; /* Assure que la couleur du texte ne change pas au survol */
+}

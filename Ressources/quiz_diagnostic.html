@@ -1,0 +1,122 @@
+<!-- Page du quiz diagnostic des habitudes d'utilisation d'internet et des medias sociaux-->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Diagnostic - Mon Identité Numérique</title>
+  <link rel="stylesheet" href="../css/quiz.css">
+</head>
+<body>
+  <header>
+    <h1>Quiz Diagnostic - Mon Identité Numerique</h1>
+  </header>
+  <main class="centered-content">
+    <section id="quiz-section">
+      <form id="quiz-form">
+        <!-- Barre de progression -->
+        <div id="progress-container">
+          <div id="progress-bar"></div>
+        </div>
+
+        <!-- Question 1 -->
+        <fieldset>
+          <legend>Quels médias sociaux utilisez-vous et combien de temps y passez-vous ?</legend>
+          <label for="social-media">Nom de l'application :</label>
+          <input type="text" id="social-media" placeholder="Exemple : Instagram" required>
+          <label for="usage-time">Minutes moyennes par jour :</label>
+          <input type="number" id="usage-time" placeholder="Exemple : 60"  min="0"required>
+        </fieldset>
+        
+        <!-- Question 2 -->
+        <fieldset>
+          <legend>Comment interagissez-vous avec les publicités ?</legend>
+          <div class="question">
+            <label>2.1 Je regarde les 10 premières secondes des vidéos sponsorisées :</label>
+            <select name="question2.1" required>
+              <option value="">-- Choisissez une option --</option>
+            </select>
+          </div>
+          <div class="question">
+            <label>2.2 Je regarde l’entièreté des vidéos sponsorisées :</label>
+            <select name="question2.2" required>
+              <option value="">-- Choisissez une option --</option>
+            </select>
+          </div>
+            <div class="question">
+                <label>2.3 Je laisse la lecture automatique me proposer une nouvelle vidéo  :</label>
+                <select name="question2.3" required>
+                <option value="">-- Choisissez une option --</option>
+                </select>
+            </div>
+            <div class="question">
+                <label>2.4 Je regarde parfois plusieurs vidéos de suite sans les avoir choisies par une recherche (vidéos suggérées)  :</label>
+                <select name="question2.4" required>
+                <option value="">-- Choisissez une option --</option>
+                </select>
+        </fieldset>
+
+        <!-- Question 3 -->
+        <fieldset>
+          <legend>Quelles sont vos pratiques actuelles en matière de protection de la vie privée lors de vos séances de navigation? </legend>
+          <div class="question">
+            <label>3.1 J’utilise l’option de navigation privée (sur Google Chrome)  :</label>
+            <select name="question3.1" required>
+              <option value="">-- Choisissez une option --</option>
+            </select>
+          </div>
+          <div class="question">
+            <label>3.2 Je supprime mon historique de navigation à tous les...   :</label>
+            <select name="question3.2" required>
+              <option value="">-- Choisissez une option --</option>
+            </select>
+          </div>
+          <div class="question">
+            <label>3.3 Je supprime les cookies (témoins de navigation) régulierement   :</label>
+            <select name="question3.3" required>
+                <option value="">-- Choisissez une option --</option>
+              </select>
+          </div>
+            <div class="question">
+                <label>3.4 Lorsque je me créée un nouveau compte sur un site web, j'utilise mon compte Google  :</label>
+                <select name="question3.4" required>
+                <option value="">-- Choisissez une option --</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <!-- Question 4 -->
+
+        <fieldset>
+          <legend>Quelles sont vos pratiques actuelles en matière de consommation de produits sur Internet?</legend>
+          <div class="question">
+            <label>4.1 Lorsqu’un site Web me demande d’accepter de recevoir de la publicité, j’accepte...  :</label>
+            <select name="question4.1" required>
+              <option value="">-- Choisissez une option --</option>
+            </select>
+          </div>
+          <div class="question">
+            <label>4.2 Lorsqu’on vous demande si vous avez apprécié ou non une publicité, vous répondez...   :</label>
+            <select name="question4.2" required>
+              <option value="">-- Choisissez une option --</option>
+            </select>
+            </div>
+        </fieldset>
+
+        <!-- Bouton de soumission -->
+        <button type="submit">Soumettre mes réponses</button>
+      </form>
+
+      <!-- Résultats -->
+      <div id="results">
+        <h2>Vos résultats</h2>
+        <p id="results-summary"></p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Cégep de Victoriaville</p>
+  </footer>
+  <script src="../js/quiz.js"></script>
+</body>
+</html>
