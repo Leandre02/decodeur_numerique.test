@@ -26,7 +26,8 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   /* Début du code emprunté 
-  * Pour mettre à jour la barre de progression
+  * Pour mettre à jour la barre de progression 
+  * Pour afficher les résultats et les conseils
   * Source : ChatGPT by OpenAI
   */
   const updateProgress = () => {
