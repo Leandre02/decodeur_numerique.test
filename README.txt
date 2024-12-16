@@ -41,26 +41,6 @@ Configuration technique
     Voici une version mise à jour du fichier README avec l'inclusion des sources :
 Le Décodeur
 
-Auteur : Léandre Kanmegne
-Description du projet
-
-"Le Décodeur" est une plateforme web interactive conçue pour sensibiliser les utilisateurs aux dangers de la désinformation, de la polarisation sociale et des biais cognitifs à l'ère des fake news. Le site propose des outils éducatifs et des ressources adaptés à différentes tranches d'âge, visant à promouvoir une consommation critique et éclairée de l'information.
-Fonctionnalités principales
-
-    Fact-checking : Service d'analyse et de vérification pour identifier les sources fiables.
-    Capsules Vidéos : Vidéos éducatives pour sensibiliser aux biais cognitifs et à la propagande.
-    Jeux Éducatifs : Jeux interactifs pour apprendre en s'amusant.
-    API Interactive : Outil pour évaluer en temps réel la qualité des informations.
-    Quiz Interactif : Questionnaire pour tester ses connaissances sur la qualité de l'information.
-
-Structure du site
-
-    Page d'accueil : Présentation de la problématique et des solutions proposées.
-    Section Problématique : Description des enjeux liés à la désinformation.
-    Section Solutions : Présentation des outils disponibles sur la plateforme.
-    Section Ressources : Accès au quiz interactif et à d'autres matériels éducatifs.
-    Section Contact : Formulaire pour entrer en contact avec l'équipe du Décodeur.
-
 Ressources et inspirations
 
 Le développement du site s'est appuyé sur diverses ressources pour assurer la pertinence et l'efficacité des outils proposés :
