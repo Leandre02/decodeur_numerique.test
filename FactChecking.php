@@ -41,6 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['source'])) {
         <?php if ($message): ?>
             <p class="message <?php echo $messageClass; ?>"><?php echo $message; ?></p>
         <?php endif; ?>
+        <!--Fonction pour voir la liste des medias-->
         <!--<h2>Liste des médias de confiance</h2>-->
         <!--< afficherListe($mysqli); ?>-->
     </div>

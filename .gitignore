@@ -1,0 +1,4 @@
+/* Fichier d'Exclusion du dossier includes, dev et sauvegarde */
+dev/*
+sauvegarde/*
+/includes/*

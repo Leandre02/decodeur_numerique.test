@@ -47,11 +47,11 @@ document.addEventListener("DOMContentLoaded", () => {
     e.preventDefault();
 
     // Vérifier si toutes les questions sont remplies
-    const allFilled = Array.from(form.querySelectorAll("input, select")).every(
+    const verificationInput = Array.from(form.querySelectorAll("input, select")).every(
       field => field.value.trim() !== ""
     );
 
-    if (!allFilled) {
+    if (!verificationInput) {
       alert("Veuillez répondre à toutes les questions.");
       return;
     }
