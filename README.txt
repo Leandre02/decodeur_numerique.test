@@ -53,3 +53,5 @@ Le développement du site s'est appuyé sur diverses ressources pour assurer la 
     Interland - Be Internet Awesome : Jeu pour enfants sur la sécurité en ligne. : https://beinternetawesome.withgoogle.com/en_us/interland
     Bad News : Jeu pour adolescents sur la propagation des fausses informations. : https://www.getbadnews.com/books/english/
     Fakey : Simulateur pour parents sur la détection des fake news. : https://fakey.osome.iu.edu/gamescreen
+
+    Pour le developpement de mon Api : https://github.com/nishitpatel01/Fake_News_Detection
